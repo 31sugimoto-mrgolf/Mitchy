@@ -11,7 +11,6 @@ async function initLiff() {
     return profile;
   } catch (error) {
     console.error('LIFF initialization failed:', error);
-    alert('LIFFの初期化に失敗しました');
-    return null;
+    throw error;
   }
 }
